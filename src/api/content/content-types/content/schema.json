@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contentTitle": {
+      "type": "string",
+      "required": true
+    },
+    "contentMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contentDescription": {
+      "type": "richtext"
+    },
+    "contentExtraDescription": {
+      "type": "richtext"
+    }
+  }
+}

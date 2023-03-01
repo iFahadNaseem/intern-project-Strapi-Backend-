@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "jobDescription": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 1
+    },
+    "jobLocation": {
+      "type": "enumeration",
+      "enum": [
+        "London",
+        "Islamabad",
+        "Faisalabad"
+      ],
+      "required": true
+    },
+    "jobType": {
+      "type": "enumeration",
+      "enum": [
+        "Full-Time",
+        "Part-Time",
+        "Internship",
+        "Remote"
+      ],
+      "required": true
+    },
+    "jobOrganization": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
